@@ -1,0 +1,99 @@
+/* Global styles */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Login container */
+.login-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    background-color: #f3f4f6;
+    padding: 20px;
+}
+
+h2 {
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+
+input, button {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    font-size: 16px;
+}
+
+button {
+    cursor: pointer;
+}
+
+button:hover {
+    opacity: 0.9;
+}
+
+/* Specific button colors */
+.bg-blue-600 {
+    background-color: #2563eb;
+    color: white;
+}
+
+.bg-red-600 {
+    background-color: #dc2626;
+    color: white;
+}
+
+.bg-black {
+    background-color: black;
+    color: white;
+}
+
+/* Smaller devices */
+@media (max-width: 640px) {
+    .login-container {
+        padding: 10px;
+    }
+
+    h2 {
+        font-size: 20px;
+    }
+
+    input, button {
+        font-size: 14px;
+    }
+}
+
+/* Medium devices */
+@media (max-width: 768px) {
+    h2 {
+        font-size: 22px;
+    }
+
+    input, button {
+        font-size: 15px;
+    }
+}
+
+/* Larger devices */
+@media (min-width: 1024px) {
+    .login-container {
+        max-width: 400px;
+        margin: 0 auto;
+    }
+
+    h2 {
+        font-size: 26px;
+    }
+
+    input, button {
+        font-size: 18px;
+    }
+}

@@ -1,0 +1,182 @@
+/* General Styles */
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+}
+
+.home-container {
+    padding: 20px;
+}
+
+/* Banner Section */
+.banner {
+    background-color: wheat;
+    color: white;
+    text-align: center;
+    padding: 50px 0;
+    margin-bottom: 20px;
+}
+
+.banner h1 {
+    font-size: 2rem;
+}
+
+/* How It Works Section */
+.how-it-works {
+    margin-bottom: 20px;
+}
+
+.how-it-works h2 {
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+}
+
+/* Image Section */
+.image-section {
+    margin-bottom: 20px;
+}
+
+.image-section h2 {
+    margin-bottom: 10px;
+}
+
+.image-gallery {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.image-gallery img {
+    width: 200px;
+    height: 200px;
+    margin-bottom: 10px;
+    border-radius: 8px;
+}
+
+/* Contact Us Section */
+.contact-us {
+    margin-bottom: 20px;
+}
+
+.contact-us h2 {
+    margin-bottom: 10px;
+}
+
+.contact-us form {
+    display: flex;
+    flex-direction: column;
+}
+
+.contact-us label {
+    margin-bottom: 5px;
+}
+
+.contact-us input,
+.contact-us textarea {
+    margin-bottom: 10px;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.contact-us button {
+    background-color: #007BFF;
+    color: white;
+    border: none;
+    padding: 10px;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+.contact-us button:hover {
+    background-color: #0056b3;
+}
+
+/* About Us Section */
+.about-us {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.owner-img {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    margin-bottom: 10px;
+}
+
+/* Footer Section */
+.footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 20px;
+    margin-top: 20px;
+}
+
+.footer .social-links a {
+    color: white;
+    text-decoration: none;
+}
+
+.footer .social-links a:hover {
+    color: #007BFF;
+}
+
+/* Media Queries for Responsive Design */
+
+/* Small Devices (max-width: 640px) */
+@media (max-width: 640px) {
+    .banner h1 {
+        font-size: 1.25rem; /* Adjust font size */
+    }
+
+    .image-gallery {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .image-gallery img {
+        width: 100%; /* Full width */
+        max-width: 300px;
+    }
+
+    .contact-us button {
+        width: 100%; /* Full width button */
+    }
+}
+
+/* Medium Devices (max-width: 768px) */
+@media (max-width: 768px) {
+    .banner h1 {
+        font-size: 1.5rem;
+    }
+
+    .image-gallery img {
+        width: 150px;
+        height: 150px;
+    }
+
+    .contact-us button {
+        width: 100%; /* Full width button */
+    }
+}
+
+/* Large Devices (max-width: 1024px) */
+@media (max-width: 1024px) {
+    .banner h1 {
+        font-size: 1.75rem;
+    }
+
+    .image-gallery img {
+        width: 150px;
+        height: 150px;
+    }
+
+    .contact-us button {
+        width: auto;
+    }
+}

@@ -1,0 +1,160 @@
+/* Basic reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+}
+
+/* Navbar Styling */
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem;
+    background-color: rgb(234, 198, 132);
+    position: relative;
+}
+
+.navbar-brand {
+    display: flex;
+    align-items: center;
+}
+
+.logo {
+    width: 50px;
+    height: 50px;
+    margin-right: 0.5rem;
+}
+
+.navbar-title {
+    font-size: 1.5rem;
+    color: white;
+    text-decoration: none;
+}
+
+/* Hamburger Menu Styling */
+.hamburger {
+    display: none;
+    flex-direction: column;
+    cursor: pointer;
+}
+
+.hamburger .bar {
+    width: 15px;
+    height: 3px;
+    background-color: white;
+    margin: 1px 0;
+}
+
+/* Navbar Links */
+.navbar-links {
+    display: flex;
+    align-items: center;
+}
+
+.nav-item {
+    color: white;
+    text-decoration: none;
+    margin: 0 1rem;
+    font-size: 1rem;
+    transition: color 0.3s;
+}
+
+.nav-item:hover {
+    color: #FFD700;
+}
+
+.navbar-user {
+    display: flex;
+    align-items: center;
+}
+
+.user-avatar {
+    width: 35px;
+    height: 35px;
+    border-radius: 50%;
+    margin-right: 0.5rem;
+}
+
+.logout-button {
+    background: none;
+    border: none;
+    color: white;
+    cursor: pointer;
+    margin-left: 1rem;
+    font-size: 1rem;
+}
+
+.logout-button:hover {
+    color: #FFD700;
+}
+
+/* Responsive Styling */
+@media (max-width: 768px) {
+    .navbar-links {
+        display: none;
+        flex-direction: column;
+        align-items: flex-start;
+        position: absolute;
+        top: 100%;
+        left: 0;
+        background-color:rgb(239, 194, 111);
+        width: 100%;
+        padding: 1rem;
+        
+    }
+
+    .navbar-links.active {
+        display: flex;
+    }
+
+    .nav-item {
+        margin: 0.5rem 0;
+        width: 100%;
+        text-align: left;
+    }
+
+    .hamburger {
+        display: flex;
+    }
+
+    .logout-button {
+        margin-left: 0;
+    }
+}
+
+@media (min-width: 769px) {
+    .hamburger {
+        display: none;
+    }
+}
+
+/* Tablet Responsiveness */
+@media (max-width: 1024px) {
+    .navbar {
+        padding: 0.5rem 1rem;
+    }
+
+    .nav-item {
+        font-size: 0.9rem;
+    }
+
+    .navbar-title {
+        font-size: 1.2rem;
+    }
+
+    .logo {
+        width: 40px;
+        height: 40px;
+    }
+
+    .user-avatar {
+        width: 30px;
+        height: 30px;
+    }
+}
+
